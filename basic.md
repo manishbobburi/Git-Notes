@@ -34,7 +34,7 @@ In Git, after a file is being tracked (e.g., after you use git add), subsequent 
 
 `git remote` -> list down all the remote connection names
 
-Remote connection -> It helps you to link two git repositories for uploading and downloading changes from each otherwise
+Remote connection -> It helps you to link two git repositories for uploading and downloading changes from each otherwise.
 
 `git remote add <name of remote> <link of the remote> `: this command helps us to add a new link to the remote repo and give a name to it
 
