@@ -32,4 +32,14 @@ In Git, after a file is being tracked (e.g., after you use git add), subsequent 
 
 `git diff`  show's the diff b/w commits, can be used with commit id and without also..
 
- 
+ `git remote` -> list down all the remote connection names
+
+Remote connection -> It helps you to link two git repositories for uploading and downloading changes from each otherwise
+
+`git remote add <name of remote> <link of the remote> `: this command helps us to add a new link to the remote repo and give a name to it
+
+`git remote rm <name of remote> `: this command deletes a remote connection
+
+`git remote rename <olanme> <newname> `: this command remanes the remote connection
+
+Note: The name of the remote connection is always used to establish communication between the repos
