@@ -43,3 +43,23 @@ Remote connection -> It helps you to link two git repositories for uploading and
 `git remote rename <olanme> <newname> `: this command remanes the remote connection
 
 Note: The name of the remote connection is always used to establish communication between the reposetries.
+
+`git add <file1> <file2> <file3>`: this command will add multiple file changes together in the staging area
+
+`git add .`: this command will add all files from working repo to staging area.
+
+`git pull <remote name> <branch name> `: downloads latest changes from the branch of the mentioned remote in your local repo.
+
+-->git pull updates your local repository with the latest changes from the remote repository.
+
+-->It helps keep your local branch up-to-date with the remote version, especially when working in teams or on collaborative projects.
+
+Recommended practice to do
+
+- make changes
+- git add <file>
+- git commit 
+- git pull
+- git push 
+Merge conflicts are a very common scenario
+merge conflicts can occur if multiple people try to make changes to the same file, and then collaborate
