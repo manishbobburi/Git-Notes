@@ -17,15 +17,18 @@
 
 UN-TRACKED -> new file has benn added that git git doesn't yet track..
 
-WORKING AREA -> Three can be a bunch of files that are not currently handled  by git. means the chnages which are done or to be done are not managed by git. A file in working area is consdered to be not in a staging area. when we do `git status` and we see bunch of `untracked files` then these are actually called in working area..
-
 
 `git add<file>  ` working to staging area
 
 `git rm --cached "filename"` //to put the file from staging area to back to working area.. for new file only not commited early
 
+WORKING AREA -> Three can be a bunch of files that are not currently handled  by git. means the chnages which are done or to be done are not managed by git. A file in working area is consdered to be not in a staging area. when we do `git status` and we see bunch of `untracked files` then these are actually called in working area..
+
+
 
 STAGING AREA -> what all files are going to be part of the next version that we will create. This staging area is the place where git knows what changes will be done from the last version to the next version.. `git add "filename"`.. to move to satging are
+
+
 
 REPOSITORY ->Actually contains the details of all your previous registered version. And the files in this area, git already manages them and know their version history 
 
@@ -38,7 +41,12 @@ After making  a commit it opens vim editor if we don't commit with msg..
 
 `git log` list down all commits of repository. for exit 'q'.
 
-`git restore <file>`  it removes all file changes from staging area . to delete the dirty peice of code // to move back the clean version of code.. 
- 
-`git restore --staged` it removes file from  staging area. and brings to working area. only works if changes re in your staging area
 
+In Git, after a file is being tracked (e.g., after you use git add), subsequent changes to that file are not automatically moved to the staging area. You need to explicitly stage the changes again by running git add after modifying the file.
+
+`git restore <file>` To discard changes in working directory, it removes all file(un-committed) changes. To delete the dirty peice of code // to move back the clean version of code.. 
+ 
+`git restore --staged` it removes file from  staging area and brings to working area. only works if changes are in your staging area.
+
+
+--->After using `git restore --staged` & `git restore <file>` the file gets to state it had in the last commit.
