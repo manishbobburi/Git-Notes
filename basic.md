@@ -40,7 +40,7 @@ In Git, after a file is being tracked (e.g., after you use git add), subsequent 
 `git diff` show's the diff b/w commits, can be used with commit id and without also..
 
 
-`git remote` -> list down all the remote connection names
+`git remote` -> list down all the remote connection names..
 
 Remote connection -> It helps you to link two git repositories for uploading and downloading changes from each otherwise.
 
